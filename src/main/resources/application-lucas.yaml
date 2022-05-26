@@ -1,0 +1,32 @@
+# DEFINICAO LOG DA APLICACAO
+logging:
+   level:
+      br.com.renalcare.renalcarebackend: DEBUG
+      org.springframework: INFO
+      
+# DEFINICAO SERVIDOR DE APLICACAO
+server:
+   port: 8080
+   contextPath: /
+            
+# DEFINICAO BANCO DE DADOS      
+spring:
+    jpa:
+        database: POSTGRESQL
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                temp:
+                    use_jdbc_metadata_defaults: false
+    datasource:
+        platform: postgres
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/cucumber
+        username: postgres
+        password: 14062000        
+          
+# PROPRIEDADES
+page.size: 15
+

@@ -1,0 +1,8 @@
+# DEFINICAO LOG DA APLICACAO
+spring:
+   application:
+      name: renalcare
+
+   profiles:
+      active: default, lucas
+    
